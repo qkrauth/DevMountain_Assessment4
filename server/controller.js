@@ -1,5 +1,5 @@
-const data = require("./database");
-let currentId = 5;
+const data = require("./database")
+let currentId = 5
 
 module.exports = {
     getFruit: (req, res) => res.status(200).send(data),

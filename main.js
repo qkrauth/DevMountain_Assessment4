@@ -6,7 +6,7 @@ const getDataBtn = document.getElementById("getData");
 const getData = () => {
     axios.get("http://localhost:4004/api/database/")
     .then(res => {
-        res.status(200).send(data);
+        res.status(200).send(data)
     }
 )}
 
@@ -33,6 +33,7 @@ const deleteData = () => {
         res.status(200).send(data)
     }
 )}
+
 function submitHandler(event) {
     event.preventDefault()
 }
