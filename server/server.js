@@ -13,9 +13,9 @@ const {
     deleteFruit
 } = require("./controller")
 
-app.get("/api/database", getFruit);
-app.post("/api/database", postFruit);
-app.put("/api/database", putFruit);
-app.delete("/api/database", deleteFruit);
+app.get("/api/data", getFruit);
+app.post("/api/data", postFruit);
+app.put("/api/data", putFruit);
+app.delete("/api/data", deleteFruit);
 
 app.listen(4004, () => console.log("Server running on port 4004"));
